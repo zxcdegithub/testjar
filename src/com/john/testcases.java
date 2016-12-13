@@ -8,8 +8,8 @@ import com.android.uiautomator.testrunner.UiAutomatorTestCase;
 
 public class testcases extends UiAutomatorTestCase {
 
-	UiDevice device = UiDevice.getInstance();
 	public void testQQ() throws Exception{
+		UiDevice device = UiDevice.getInstance();
 		device.pressHome();
 		UiObject qq = new UiObject(new UiSelector().text("QQ"));
 		qq.clickAndWaitForNewWindow();
@@ -19,6 +19,7 @@ public class testcases extends UiAutomatorTestCase {
 	}
 	
 	public void testQQ2() throws Exception{
+		UiDevice device = UiDevice.getInstance();
 		device.pressHome();
 		UiObject qq = new UiObject(new UiSelector().text("QQ"));
 		qq.clickAndWaitForNewWindow();
@@ -27,12 +28,4 @@ public class testcases extends UiAutomatorTestCase {
 		device.pressBack();
 	}
 	
-	public void testQQ3() throws Exception{
-		device.pressHome();
-		UiObject qq = new UiObject(new UiSelector().text("QQ"));
-		qq.clickAndWaitForNewWindow();
-		device.pressBack();
-		device.pressRecentApps();
-		device.pressBack();
-	}
 }
