@@ -27,5 +27,14 @@ public class testcases extends UiAutomatorTestCase {
 		device.pressRecentApps();
 		device.pressBack();
 	}
+	public void testQQ3() throws Exception{
+		UiDevice device = UiDevice.getInstance();
+		device.pressHome();
+		UiObject qq = new UiObject(new UiSelector().text("QQ"));
+		qq.clickAndWaitForNewWindow();
+		device.pressBack();
+		device.pressRecentApps();
+		device.pressBack();
+	}
 	
 }
